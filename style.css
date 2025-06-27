@@ -4,22 +4,23 @@
 
 body {
   margin: 0;
-  padding: 20px; /* Biar gak mentok kiri-kanan */
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 .container {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 35px;
   border-radius: 15px;
-  width: 100%;
-  max-width: 400px;
+  width: 90%;              /* 🔥 Biar nggak mentok kiri-kanan */
+  max-width: 400px;        /* 🔒 Maksimal biar tetap pas */
+  margin: 0 auto;          /* ✅ Pusatkan kontainer */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
   backdrop-filter: blur(8px);
