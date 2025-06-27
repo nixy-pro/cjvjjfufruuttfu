@@ -1,45 +1,53 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f1f1f1;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  padding: 30px 15px;
 }
-.navbar {
-  background-color: #222;
-  color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-button {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 6px;
-  background-color: #00c9a7;
-  color: white;
-  cursor: pointer;
-}
+
 .store-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 30px;
-}
-.product-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 15px;
+  max-width: 700px;
+  margin: auto;
   text-align: center;
 }
-.product-card img {
-  width: 100%;
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.app-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+}
+
+.app-card h2 {
+  margin-top: 0;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
   border-radius: 8px;
+  background-color: #00c9a7;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00c9a7;
+  transition: 0.3s ease;
 }
-.product-card h3 {
-  margin: 10px 0 5px 0;
-}
-.product-card p {
-  margin: 0 0 10px 0;
-  color: #444;
+
+.btn-download:hover {
+  background-color: #02a78e;
+  box-shadow: 0 0 20px #00c9a7, 0 0 40px #00c9a7;
 }
