@@ -1,48 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Store Keren</title>
+  <title>Download Aplikasi</title>
   <link rel="stylesheet" href="store.css" />
 </head>
 <body>
-  <div class="navbar">
-    <h2>🛒 Keren Store</h2>
-    <button onclick="logout()">Logout</button>
-  </div>
   <div class="store-container">
-    <div class="product-card">
-      <img src="https://placehold.co/300x200" alt="Product 1" />
-      <h3>Produk A</h3>
-      <p>Rp 20.000</p>
-      <button>Beli Sekarang</button>
+    <h1>📱 Aplikasi Keren untuk Kamu</h1>
+
+    <div class="app-card">
+      <h2>🔥 Aplikasi CJV Pro</h2>
+      <p>Download aplikasi Android terbaru versi ringan dan cepat!</p>
+      <a href="https://example.com/download.apk" class="btn-download" target="_blank">Download Sekarang</a>
     </div>
-    <div class="product-card">
-      <img src="https://placehold.co/300x200" alt="Product 2" />
-      <h3>Produk B</h3>
-      <p>Rp 35.000</p>
-      <button>Beli Sekarang</button>
-    </div>
-    <div class="product-card">
-      <img src="https://placehold.co/300x200" alt="Product 3" />
-      <h3>Produk C</h3>
-      <p>Rp 50.000</p>
-      <button>Beli Sekarang</button>
+
+    <div class="app-card">
+      <h2>🛠️ Tools Dev Helper</h2>
+      <p>Alat bantu buat debugging dan testing apps secara offline.</p>
+      <a href="https://example.com/devhelper.apk" class="btn-download" target="_blank">Download Tools</a>
     </div>
   </div>
-  <script>
-    function logout() {
-      localStorage.removeItem("loggedInUser");
-      window.location.href = "index.html";
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const user = localStorage.getItem("loggedInUser");
-      if (!user) {
-        window.location.href = "index.html";
-      }
-    });
-  </script>
 </body>
 </html>
