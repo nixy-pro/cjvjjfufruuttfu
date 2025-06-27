@@ -1,33 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 20px; /* Biar gak mentok kiri-kanan */
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
+
 .container {
   background-color: rgba(255, 255, 255, 0.05);
-  padding: 40px;
+  padding: 35px;
   border-radius: 15px;
-  width: 90%;
+  width: 100%;
   max-width: 400px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
+  backdrop-filter: blur(8px);
 }
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
 input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-top: 10px;
   border-radius: 8px;
   border: none;
   outline: none;
+  font-size: 1rem;
 }
+
 button {
-  margin-top: 15px;
-  padding: 10px 15px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
   border: none;
   background-color: #00c9a7;
   color: white;
@@ -35,10 +51,13 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 button:hover {
   background-color: #02a78e;
 }
+
 #login-status {
-  margin-top: 10px;
+  margin-top: 15px;
   color: #f8d7da;
+  font-size: 0.9rem;
 }
