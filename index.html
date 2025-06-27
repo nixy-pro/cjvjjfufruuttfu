@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Demo - GitHub Pages</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Login Manual</h1>
+    <div id="login-form">
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+      <p id="login-status"></p>
+    </div>
+    <div id="welcome-section" style="display: none;">
+      <h2>Selamat datang, <span id="user-name"></span>!</h2>
+      <a href="store.html"><button>Lanjut ke Store 🛒</button></a>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
